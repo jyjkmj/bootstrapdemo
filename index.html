@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            nav{
+                width:100%;
+                height: 82px;
+            }
+            .topbar{
+                margin-top: 10px;
+            }
+            #topnavbar{
+                margin-bottom: 0px;
+                border-bottom: 2px solid #0ba1e4;
+                
+            }
+            #topnavbar{
+                position:fixed;
+                z-index:100;
+                background: rgba(255,255,255,0.9);
+            }
+            .lunbotu{
+                margin-top:82px;
+            }
+            .navbar-brand img{
+                margin-top: -14px;
+            }
+            #ulist .alink1 .line-top{
+                border-top: 1px solid #0ba1e4;
+                width: 18px;
+                margin: auto;
+            }
+            .container-fluid .daohanlan{
+                margin-right: -30px !important;
+                margin-left: -30px !important;
+            }
+
+            /* .carousel{
+                height: 540px;
+            }
+            .carousel .sildetu{
+                height: 540px;
+            }
+            .carousel .sildetu .sildetu2{
+                height: 540px;
+            }
+            
+            .carousel .sildetu .sildetu3{
+                height: 540px;
+            }
+            .carousel-inner .item img{
+                height: 540px;
+            } */
+            @media (min-width: 992px) and (max-width:1600px) { 
+                .carousel-inner .item img{
+                    height: 540px !important;
+                }
+            }
+
+            @media (min-width: 992px) and (max-width:1200px) { 
+                .oursevice .itemsevice .nextsevice .serviced .titleCard .serviceline{
+                    width:226px !important;
+                }
+            }
+
+
+            @media (min-width: 768px) and (max-width:992px) { 
+                .carousel-inner .item img{
+                    height: 430px !important;
+                }
+                .boxmiddle .boxmiddle2 .threenum1 .number1 span{
+                    font-size: 50px !important;
+                }
+                .boxnext .boxnext2 .yousi .yousi2 p{
+                    width: 135px !important;
+                }
+                .oursevice .itemsevice .nextsevice .serviced .titleCard .serviceline{
+                    width:172px !important;
+                }
+                .ourexample{
+                    height:1300px !important;
+                }
+
+                .morequest{
+                    margin-top:2500px !important;
+                }
+
+                .ourclient{
+                    height:500px !important;
+                }
+
+                .footing2 h2{
+                    font-size:22px !important;
+                }
+
+                .itemfooter .footing img{
+                height:94px !important;
+            }
+            }
+
+            @media (max-width: 767px) {  
+                .carousel-inner .item img{
+                    height: 340px !important;
+                }
+                .daohanlan{
+                    background-color: #f8f8f8;
+                }
+                .boxmiddle{
+                    height :790px !important;
+                }
+                .boxmiddle2{
+                    height :790px !important;
+                }
+                .boxnext{
+                    height:1574px !important;
+                }
+                .boxnext2{
+                    height:1510px !important;
+                }
+                .oursevice .itemsevice .nextsevice .serviced .titleCard .serviceline{
+                    width:100% !important;
+                }
+                .bottomclick .clickbtn2{
+                    margin-top:1520px !important;
+                }
+
+                .ourexample{
+                    height:1300px !important;
+                    margin-top:1450px !important;
+                }
+                .news{
+                    height:1000px !important;
+                }
+
+                .ourclient{
+                    height:700px !important;
+                }
+                .morequest{
+                    margin-top:1px !important;
+                }
+                .footer{
+                    height:700px !important;
+                }
+
+                .wechathao{
+                    text-align:left !important;
+                }
+
+            }
+
+            @media (max-width: 500px) {  
+                .carousel-inner .item img{
+                    height: 270px !important;
+                }
+               
+            }  
+
+            .boxmiddle{
+                height :450px;
+                /* border: 1px solid red; */
+            }
+            .boxmiddle2{
+                height: 350px;
+                /* border: 1px solid red; */
+                margin-top:50px;
+            }
+            .boxnext{
+                height:580px;
+                /* border: 1px solid red; */
+                background-color: #e1e1e1;
+            }
+
+            .boxnext2{
+                height: 530px;
+                margin-top: 50px;
+                /* border: 1px solid red; */
+            }
+
+            #ulist li a{
+                font-size: 16px;
+            }
+
+            #ulist li a:hover{
+                color:skyblue;
+            }
+            /* .alink1 a:hover{
+                color: skyblue;
+            } */
+            .boxmiddle .boxmiddle2 .cenline{
+                margin: 30px auto 24px;
+                width: 80px;
+                border-top: 2px solid #0ba1e4;
+            }
+
+            .boxnext .boxnext2 .cenline{
+                margin: 30px auto 24px;
+                width: 80px;
+                border-top: 2px solid #0ba1e4;
+            }
+
+            .boxnext .boxnext2 .yousi .yousi2 .spanIcon{
+                color: #0ba1e4;
+                font-size: 80px;
+                margin-top: 40px;
+            }
+            .boxnext .boxnext2 .yousi .yousi2{
+                text-align:center;
+                height: 330px;
+                /* width:227px; */
+            }
+
+            .boxnext .boxnext2 .yousi .yousi2:hover{
+                background:#0ba1e4;
+            }
+
+            .boxnext .boxnext2 .yousi .yousi2:hover span{
+                color: white;
+            }
+            .boxnext .boxnext2 .yousi .yousi2:hover h3{
+                color: white;
+            }
+            .boxnext .boxnext2 .yousi .yousi2:hover {
+                color: white;
+            }
+
+            .boxnext .boxnext2 .yousi .yousi2 h3{
+                margin-top: 50px;
+            }
+
+            .boxnext .boxnext2 .yousi .yousi2 p{
+                width: 190px;
+                margin-left: auto;
+                margin-right:auto;
+            }
+
+            .boxmiddle .boxmiddle2 .threenum1 .number1 span{
+                font-size: 70px;
+                color: #0ba1e4;
+            }
+
+            .boxmiddle .boxmiddle2 .threenum1 h4{
+                color:#ababab;
+            }
+
+            .oursevice{
+                height: 868px;
+                /* border: 1px solid red; */
+            }
+
+            .oursevice .itemsevice{
+                /* border: 1px solid red; */
+                height: 846px;
+            }
+
+            .oursevice .itemsevice .cenline{
+                margin: 30px auto 24px;
+                width: 80px;
+                border-top: 2px solid #0ba1e4;
+            }
+
+            .oursevice .itemsevice h1{
+                margin-top: 50px;
+            }
+
+            .oursevice .itemsevice .nextsevice{
+                margin-top: 50px;
+                /* border:1px solid red; */
+                height: 500px;
+            }
+
+            .oursevice .itemsevice .nextsevice .serviced{
+                height:500px;
+                border:1px solid #ababab;
+                margin:0;
+                padding:0;
+            }
+
+            /* .oursevice .itemsevice .nextsevice .serviced .titleCard .cenline{
+                width:160px;
+                border: 1px solid #ababab;
+            } */
+
+
+            .bottomclick .clickbtn2:hover{
+                color:white;
+                background: #0ba1e4;
+            }
+
+
+
+            .oursevice .itemsevice .nextsevice .serviced .titleCard h4{
+                font-size:18px;
+                font-weight: 700;
+                color:#0ba1e4;
+                margin-top: 30px;
+            }
+
+            .oursevice .itemsevice .nextsevice .serviced .titleCard .serviceline{
+                margin-top: 20px;
+            }
+
+            .oursevice .itemsevice .nextsevice .serviced .listcard p{
+                height:46px;
+                line-height: 46px;
+            }
+
+            .oursevice .itemsevice .nextsevice .serviced .listcard .firstTitle{
+                margin-top: 30px;
+            }
+
+            .oursevice .itemsevice .nextsevice .serviced .listcard .clickbtn{
+                padding:6px 12px;
+            }
+
+            .ourexample{
+                height:610px;
+                /* border:1px solid red; */
+                background: #e1e1e1;
+            }
+            .nextexample{
+                margin-top:40px;
+                height:550px;
+                /* border:1px solid red; */
+            }
+
+            .nextexample .cenline{
+                margin: 30px auto 24px;
+                width: 80px;
+                border-top: 2px solid #0ba1e4;
+            }
+            .ourexample2{
+                height:200px;
+                border:1px solid red;
+            }
+
+            .ourexample2 .touxiang{
+                width: 100%;
+                height: 50px;
+                position: absolute;
+                top: -26px;
+                margin: 0;
+                left: 0;
+                text-align: center;
+            }
+
+            .ourexample2 .touxiang img{
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }
+            .ourexample .nextexample .touxiangIcon{
+                margin-top: 60px;
+            }
+            .ourexample2 .content p{
+                width:260px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:50px;
+            }
+
+            .position-icon{
+                background-image: url(img/position-icon.svg);
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+                width: 10px;
+                height: 10px;
+                float: left;
+                margin-top: 3px;
+                margin-right: 4px;
+            }
+
+            .downtag{
+                margin-top:30px;
+                font-size:12px;
+                padding:0px 30px 0px 30px;
+            }
+
+            .rightIcon{
+                float:right;
+                color: #aaa;
+            }
+            .qianzheng{
+                background-color: #aaa;
+                padding: .5% 3.5%;
+                color: white;
+            }
+            .arrow{
+                height:22px;
+                width: 22px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: transparent transparent red red;
+                background: #e1e1e1;
+                transform: rotate(-45deg);
+                margin-top:10px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            .figure-icon{
+                background-image: url(img/yhgl-icon.svg);
+                background-repeat: no-repeat;
+                background-size: 70px 70px;
+                width: 70px;
+                height: 70px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:30px;
+            }
+
+            .news{
+                height:700px;
+                /* border:1px solid red; */
+            }
+
+            .news .new2 h1{
+                margin-top:90px;
+            }
+
+            .news .new2 .cenline{
+                margin: 30px auto 24px;
+                width: 80px;
+                border-top: 2px solid #0ba1e4;
+            }
+
+            .newsimg a{
+                width: 140px;
+                height: 110px;
+                /* background-color: red;
+                border: 1px solid red;
+                border-radius: 4px;
+                padding: 4px;
+                overflow: hidden; */
+            }
+            .ournews .titlelink .mainnews{
+                font-size: 12px;
+                color: #919191;
+            }
+            .ournews .titlelink .mainnews2{
+                font-size: 12px;
+                color: #919191;
+                height:50px;
+                width:350px;
+            }
+            .ournews .titlelink .mainnews3{
+                font-size: 12px;
+                color: #919191;
+            }
+
+            .ournews .titlelink .mainnews3 a{
+                font-size: 12px;
+                color: #919191;
+            }
+            .ournews .titlelink a{
+                text-decoration: none;
+            }
+
+            .ournews .titlelink a h4{
+                margin-top:0px;
+            }
+
+            .ournews .titlelink a:hover{
+                font-weight:700;
+            }
+
+            
+
+            .newsimg a img{
+                width: 140px;
+                height: 110px;
+                float:left;
+            }
+            .xiangxi{
+                float:right;
+            }
+            .teeger{
+                margin-top:50px;
+            }
+            .teeger2{
+                margin-top:20px;
+            }
+
+            .morenews{
+                padding-top:40px;
+            }
+
+            .ourclient{
+                height:440px;
+                border:1px solid transparent;
+                background:#e1e1e1;
+            }
+
+            .ourclient2{
+                height:400px;
+                margin-top:20px;
+                /* border:1px solid red; */
+            }
+
+            .ourclient2 .cenline{
+                margin: 30px auto 24px;
+                width: 80px;
+                border-top: 2px solid #0ba1e4;
+            }
+
+            .clientlogo{
+                text-align: center;
+                border: 1px solid #c1c1c1;
+                margin: 20px auto;
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .clientlogo:hover{
+                background-color: #fafafa;
+                border: 1px solid #0ba1e4;
+                box-shadow: 0 0 10px 0 rgba(45,183,245,.5);
+                filter:none;
+            }
+            .clientlogo img{
+                height:62px;
+                filter: grayscale(100%);
+            }
+
+            .morequest{
+                height:286px;
+                border:1px solid transparent;
+                background:#1585db;
+                color:white;
+            }
+
+            .morequest2 .cenline{
+                margin: 30px auto 24px;
+                width: 380px;
+                border-top: 2px solid white;
+            }
+
+            .morequest2 h1{
+                margin-top:40px;
+            }
+
+            .morequest2 h2 small{
+                color:white;
+            }
+
+            .morequest2 .btn{
+                font-size: 24px;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-top: 20px;
+                color:white;
+                color: #fff;
+                background: transparent;
+                border-color: #fff;
+                border-radius: 6px;
+            }
+
+            .morequest2 .btn:hover{
+                background:white;
+                color:#1585db;
+            }
+
+            .footer{
+                height:240px;
+                /* border:1px solid red; */
+                background-color: #363636;
+            }
+            .itemfooter{
+                height:240px;
+                /* border:1px solid red; */
+            }
+            .itemfooter .footing{
+                height: 160px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                padding-left: 1em;
+                border-left: 2px solid #c1c1c1;
+            }
+
+            .itemfooter .footing h4{
+                color:white;
+            }
+            .itemfooter .footing ul li a{
+                color:white;
+                line-height:2.5em;
+            }
+            .itemfooter .footing img{
+                height:140px;
+            }
+
+            .itemfooter .footing2{
+                height: 160px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                padding-left: 1em;
+                border-left: 2px solid #c1c1c1;
+                overflow: hidden;
+                border-right: 2px solid #c1c1c1;
+            }
+
+            .footing2 h2 img{
+                width: 40px;
+                height: 40px;
+                margin-top: -6px;
+                margin-right: 10px;
+            }
+
+            .footing2 h2{
+                margin-top:10px;
+                color:white;
+            }
+
+            .copyright{
+                height:125px;
+                background:#666666;
+            }
+
+            .textghs{
+                width:300px;
+                margin:0 auto; 
+                padding:20px 0; 
+                text-align: center;
+            }
+
+            .copyright3 p{
+                margin-top:20px;
+            }
+
+            .copyright3 p a{
+                color: white;
+                text-decoration:none;
+            }
+            .textghs a p{
+                text-align:left;
+                color:white;
+                height:20px;
+                width:200px;
+                float:left;
+                margin: 0px 0px 0px 5px
+            }
+
+            .textghs a img{
+                float:left;
+            }
+
+            .textghs a{
+                display:inline-block;
+                text-decoration:none;
+                height:20px;
+                line-height:20px;
+            }
+
+            .clickbtn:hover{
+                border:1px solid white;
+                background:white;
+                color:#0ba1e4 !important;
+            }
+
+            .silderIcon{
+                z-index: 1000;
+                position:fixed;
+                top:170px;
+                right:10px;
+                height:200px;
+                width:50px;
+                /* border:1px solid red; */
+            }
+
+            .silderIcon ul{
+                list-style: none;
+            }
+
+            .silderIcon ul .silderman{
+                margin-top: 2px;
+                width:48px;
+                height:48px;
+                border: 1px solid #0ba1e4;
+                background-color: #f5f5f5;
+                background-image: url(img/clan-slider.png);
+                background-repeat:no-repeat;
+                background-position:0 -92px;
+                cursor: pointer;
+            }
+
+
+            .silderIcon ul .silderman:hover{
+                background-color: #0ba1e4;
+                background-position: -46px -92px;
+            }
+
+            .silderIcon ul .silderQQ:hover{
+                background-color: #0ba1e4;
+                background-position: -46px -138px;
+            }
+
+            .silderIcon ul .silderphone:hover{
+                background-color: #0ba1e4;
+                background-position: -46px -230px;
+            }
+
+
+            .silderIcon ul .silderchat:hover{
+                background-color: #0ba1e4;
+                background-position: -46px -184px;
+            }
+
+
+
+            /* .silderIcon ul .silderman:hover .sildertips{
+                display: block;
+            } */
+
+            .silderIcon ul .silderQQ{
+                margin-top: 2px;
+                width:48px;
+                height:48px;
+                border: 1px solid #0ba1e4;
+                background-color: #f5f5f5;
+                background-image: url(img/clan-slider.png);
+                background-repeat:no-repeat;
+                background-position: 0 -138px;
+                cursor: pointer;
+            }
+
+            .silderIcon ul .silderphone{
+                margin-top: 2px;
+                width:48px;
+                height:48px;
+                border: 1px solid #0ba1e4;
+                background-color: #f5f5f5;
+                background-image: url(img/clan-slider.png);
+                background-repeat:no-repeat;
+                background-position: 0 -230px;
+                cursor: pointer;
+            }
+
+            .silderIcon ul .silderchat{
+                margin-top: 2px;
+                width:48px;
+                height:48px;
+                border: 1px solid #0ba1e4;
+                background-color: #f5f5f5;
+                background-image: url(img/clan-slider.png);
+                background-repeat:no-repeat;
+                background-position: 0 -184px;
+                cursor: pointer;
+            }
+
+            .silderIcon ul .backtop{
+                margin-top: 2px;
+                width:48px;
+                height:48px;
+                border: 1px solid #0ba1e4;
+                background-color: #f5f5f5;
+                background-image: url(img/clan-slider.png);
+                background-repeat:no-repeat;
+                background-position: 0 0;
+                cursor: pointer;
+            }
+
+            .silderIcon ul .backtop:hover{
+                background-color: #0ba1e4;
+                background-position: -46px 0;
+            }
+
+            .silderIcon ul .sildertips{
+                position: absolute;
+                top: 2px;
+                right: 50px;
+                display: none;
+                height: 48px;
+                padding-left: 10px;
+                padding-right: 2px;
+                white-space: nowrap;
+                border: 1px solid #0ba1e4;
+                background-color: #0ba1e4;
+                text-align: center;
+                line-height: 48px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+            .silderIcon ul .sildertips2{
+                position: absolute;
+                top: 52px;
+                right: 50px;
+                display: none;
+                height: 48px;
+                padding-left: 10px;
+                padding-right: 2px;
+                white-space: nowrap;
+                border: 1px solid #0ba1e4;
+                background-color: #0ba1e4;
+                text-align: center;
+                line-height: 48px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+
+            .silderIcon ul .sildertips3{
+                position: absolute;
+                top: 102px;
+                right: 50px;
+                display: none;
+                height: 48px;
+                padding-left: 10px;
+                padding-right: 2px;
+                white-space: nowrap;
+                border: 1px solid #0ba1e4;
+                background-color: #0ba1e4;
+                text-align: center;
+                line-height: 48px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+
+            .silderIcon ul .sildertips4{
+                position: absolute;
+                top: 4px;
+                right: 50px;
+                display: none;
+                height: 196px;
+                width: 196px;
+                padding-left: 10px;
+                padding-right: 2px;
+                white-space: nowrap;
+                border: 1px solid #0ba1e4;
+                background-color: #0ba1e4;
+                text-align: center;
+                line-height: 48px;
+                font-size: 18px;
+                color: #fff;
+                background: url(img/wechat.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .mobboottom{
+                text-align: center;
+                width: 100%;
+                max-height: 64px;
+                z-index: 1000;
+                background-color: rgba(255,255,255,0.9);
+                position: fixed;
+                bottom: 0;
+                border-top: 2px solid #0ba1e4;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .mobboottom .container .row{
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            .mobboottom .container .row a{
+                display: block;
+                padding-top: 5px;
+                padding-bottom: 2px;
+                color: #616161;
+                text-align: center;
+                line-height: 1.5em;
+                font-size: 12px;
+            }
+
+            .mobboottom .container .row a img{
+                max-width: 28px;
+            }
+
+            .mobboottom .container .row a span{
+                display: block;
+            }
+
+            
+
+            /* .silderIcon ul li .silderman{
+                width:48px;
+                height:48px;
+                border: 1px solid #0ba1e4;
+                background-color: #f5f5f5;
+                background-image: url(img/clan-slider.png);
+                background-repeat:no-repeat;
+                background-position:0 -92px;
+            } */
+        </style>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+            <nav class="navbar navbar-default" id="topnavbar">
+                <div class="container topbar">
+                    <div class="container-fluid">
+                      <div class="navbar-header daohanlan2">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                      </div>
+                      <div class="collapse navbar-collapse daohanlan" id="bs-example-navbar-collapse-1" style="position: relative;z-index: 1000;">
+                            <ul class="nav navbar-nav">
+                            </ul>
+                        <ul class="nav navbar-nav navbar-right" id="ulist">
+                            <li class="alink1"><a href="#" >首页</a><p class="line-top hidden-xs"></p></li>
+                            <li class="alink1"><a href="#" >签证指南</a><p></p></li>
+                            <li class="alink1"><a href="#" >签证加急</a><p></p></li>
+                            <li class="alink1"><a href="#" >签证服务</a><p></p></li>
+                            <li class="alink1"><a href="#" >签证资讯</a><p></p></li>
+                            <li class="alink1"><a href="#" >资料下载</a><p></p></li>
+                        </ul>
+                      </div>
+                      <!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </div><!-- /.container-->
+                  </nav>
+
+                <div id="carousel-example-generic lunbotu" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner sildetu" role="listbox">
+                            <div class="item active sildetu2">
+                                    <img src="img/banner1.jpg" alt="1">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item sildetu3">
+                                <img src="img/banner2.jpg" alt="2">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="boxmiddle col-md-12">
+                        <div class="container boxmiddle2">
+                            <h1 class="text-center">我们的成绩</h1>
+                            <p class="cenline"></p>
+                            <h2 class="text-center"><small>2018年1月1日至2018年12月30日，我们的接待数据。</small></h2>
+                            <div class="col-sm-3 threenum1">
+                                <div class="number1 text-center"><span>18,397</span></div>
+                                <h4 class="text-center">累计受理申请</h4>
+                            </div>
+                            <div class="col-sm-3 threenum1">
+                                <div class="number1 text-center"><span>98.8%</span></div>
+                                <h4 class="text-center">综合通过率</h4>
+                            </div>
+                            <div class="col-sm-3 threenum1">
+                                <div class="number1 text-center"><span>3,273</span></div>
+                                <h4 class="text-center">加急申请人数</h4>
+                            </div>
+                            <div class="col-sm-3 threenum1">
+                                <div class="number1 text-center"><span>100%</span></div>
+                                <h4 class="text-center">加急成功率</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="boxnext col-md-12">
+                            <div class="container boxnext2">
+                                <h1 class="text-center">我们的成绩</h1>
+                                <p class="cenline"></p>
+                                <h2 class="text-center"><small>每一份签证申请都是独立个案，每一位申请人都应该被认真对待。</small></h2>
+
+                                <div class="conbox">
+                                <div class="col-sm-3 yousi">
+                                    <div class="thumbnail yousi2">
+                                        <span class="glyphicon glyphicon-time spanIcon"></span>
+                                        <h3 class="text-center">十一年美签经验</h3>
+                                        <p>2006年开始办理美国签证至今，积累了丰富的首签和拒签再签实用经验。</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-3 yousi">
+                                    <div class="thumbnail yousi2">
+                                        <span class="glyphicon glyphicon-screenshot spanIcon"></span>
+                                        <h3 class="text-center">一对一精准定制</h3>
+                                        <p>每一位申请人都是独立的签证个案，我们从签证原理开始，为您定制最优方案。</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-3 yousi">
+                                    <div class="thumbnail yousi2">
+                                        <span class="glyphicon glyphicon-repeat spanIcon"></span>
+                                        <h3 class="text-center">高效率即时响应</h3>
+                                        <p>遇到任何疑问，您都会在第一时间得到我们的正面回应，并进行相关处理。</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-3 yousi">
+                                    <div class="thumbnail yousi2">
+                                        <span class="glyphicon glyphicon-thumbs-up spanIcon"></span>
+                                        <h3 class="text-center">精益求精的态度</h3>
+                                        <p>死磕完美材料，对签证申请流程中的细节一丝不苟，力争最高通过率。</p>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid oursevice col-md-12">
+                        <div class="container itemsevice">
+                                <h1 class="text-center">我们的服务</h1>
+                                <p class="cenline"></p>
+                                <h2 class="text-center"><small>与美国非移民签证申请相关的所有服务，我们都提供支持。</small></h2>
+                                <div class="container-fluid nextsevice"> 
+                                    <div class="col-sm-3 serviced">
+                                        <div class="titleCard">
+                                            <h4 class="text-center">美国加急预约</h4>
+                                            <p class="text-center">全程加急办理</p>
+                                            <p style="width: 277px;border:1px solid #ababab" class="serviceline"></p>
+                                        </div>
+                                        <div class="listcard text-center">
+                                            <p class="firstTitle">3个工作日内进馆</p>
+                                            <p>先加急，后付费</p>
+                                            <p>100%加急成功</p>
+                                            <p>支持全国五大领区</p>
+                                            <p>支持所有签证类型</p>
+                                            <a class="btn clickbtn" href="#" style="border-radius: 4px; border:1px solid #0ba1e4;margin-top: 10px">查看详情</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 serviced">
+                                            <div class="titleCard">
+                                                <h4 class="text-center">美国商务签证</h4>
+                                                <p class="text-center">B1/B2商务</p>
+                                                <p style="width: 277px;border:1px solid #ababab" class="serviceline"></p>
+                                            </div>
+                                            <div class="listcard text-center">
+                                                <p class="firstTitle">10年多次往返</p>
+                                                <p>一对一方案定制</p>
+                                                <p>申请材料指导</p>
+                                                <p>面签培训</p>
+                                                <p>全程解答所有疑问</p>
+                                                <a class="btn clickbtn" href="#" style="border-radius: 4px; border:1px solid #0ba1e4;margin-top: 10px">查看详情</a>
+                                            </div>
+                                    </div>
+                                    <div class="col-sm-3 serviced">
+                                            <div class="titleCard">
+                                                    <h4 class="text-center">美国免面签</h4>
+                                                    <p class="text-center">免面试中信代传递</p>
+                                                    <p style="width: 277px;border:1px solid #ababab" class="serviceline"></p>
+                                                </div>
+                                                <div class="listcard text-center">
+                                                    <p class="firstTitle">简单申请材料</p>
+                                                    <p>无须进馆面试</p>
+                                                    <p>B1/B2十年有效</p>
+                                                    <p>可加急申请</p>
+                                                    <p>全流程服务</p>
+                                                    <a class="btn clickbtn" href="#" style="border-radius: 4px; border:1px solid #0ba1e4;margin-top: 10px">查看详情</a>
+                                                </div>
+                                    </div>
+                                    <div class="col-sm-3 serviced">
+                                            <div class="titleCard">
+                                                <h4 class="text-center">美国留学</h4>
+                                                <p class="text-center">F1/F2留学陪读</p>
+                                                <p style="width: 277px;border:1px solid #ababab" class="serviceline"></p>
+                                            </div>
+                                            <div class="listcard text-center">
+                                                <p class="firstTitle">签证方案资讯</p>
+                                                <p>申请材料指导</p>
+                                                <p>代缴SEVIS费</p>
+                                                <p>面签培训</p>
+                                                <p>可加急办理</p>
+                                                <a class="btn clickbtn" href="#" style="border-radius: 4px; border:1px solid #0ba1e4;margin-top: 10px">查看详情</a>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 text-center bottomclick">
+                                    <a href="#" class="btn clickbtn2" style="border-radius: 4px; border:1px solid #0ba1e4;margin-top: 50px;padding: 10px 16px;
+                                    font-size: 18px;">查看更多服务</a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="container-fluid ourexample col-sm-12">
+                        <div class="container nextexample">
+                                <h1 class="text-center">客户的鼓励</h1>
+                                <p class="cenline"></p>
+                                <h2 class="text-center"><small>帮您解决实际问题，顺利及时的获得签证，是我们存在的根本价值</small></h2>
+
+                               
+                                <div class="col-md-4 touxiangIcon">
+                                    <div class="ourexample2">
+                                        <h3 class="touxiang"><img src="img/pingjia1.jpg" alt="1"></h3>
+                                        <div class="content">
+                                            <p class="text-center">
+                                                    护照丢了，定了春节行程。11号补好护照约了13号面签，这速度简直惊人，所有的旅行社都说弄不了，来不及了，肯定没戏。多亏了你们，非常感谢！
+                                            </p>
+                                            <div class="downtag">
+                                                <span class="qianzheng">B1商务签证</span>
+                                                <div class="rightIcon">
+                                                    <span class="position-icon"></span>
+                                                    <span>北京领事馆</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                        </div>
+                                    </div>
+                                    <figure class="figure-icon"></figure>
+                                </div>
+
+                                <div class="col-md-4 touxiangIcon">
+                                        <div class="ourexample2">
+                                            <h3 class="touxiang"><img src="img/pingjia2.jpg" alt="1"></h3>
+                                            <div class="content">
+                                                <p class="text-center">
+                                                        因为我情况很特殊也很难办，白本加多次拒签。感谢你们为我做详细的分析与方案，这次签证终于过了！本来都做好心理准备再拒我就彻底放弃的。谢谢你们！
+                                                </p>
+                                                <div class="downtag">
+                                                    <span class="qianzheng">B2旅游签证</span>
+                                                    <div class="rightIcon">
+                                                        <span class="position-icon"></span>
+                                                        <span>广州领事馆</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="arrow">
+                                            </div>
+                                        </div>
+                                        <figure class="figure-icon"></figure>
+                                    </div>
+
+
+                                    <div class="col-md-4 touxiangIcon">
+                                            <div class="ourexample2">
+                                                <h3 class="touxiang"><img src="img/pingjia3.jpg" alt="1"></h3>
+                                                <div class="content">
+                                                    <p class="text-center">
+                                                            同学推荐过来的，马上就要开学了，加上去年成绩不并理想。多亏你们帮我插队面签，分析面签问题，非常专业。现在签证已经拿到了，我会再介绍同学来。
+                                                    </p>
+                                                    <div class="downtag">
+                                                        <span class="qianzheng">F1留学签证</span>
+                                                        <div class="rightIcon">
+                                                            <span class="position-icon"></span>
+                                                            <span>上海领事馆</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="arrow">
+                                                </div>
+                                            </div>
+                                            <figure class="figure-icon"></figure>
+                                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container-fluid col-sm-12 news">
+                        <div class="container new2">
+                                <h1 class="text-center">美国签证最新资讯</h1>
+                                <p class="cenline"></p>
+                                <h2 class="text-center"><small>中岚签证帮您关注最新美国签证相关政策与新闻。</small></h2>
+                                
+                                <div class="col-sm-6 teeger">
+                                        <div class="media ournews">
+                                            <div class="media-left newsimg">
+                                                <a href="#">
+                                                <img class="media-object" src="img/01.jpg" alt="1">
+                                                </a>
+                                            </div>
+                                            <div class="media-body titlelink">
+                                                <a href="#">
+                                                    <h4>92名中国民工被欠薪受困塞班岛 华裔...</h4>
+                                                </a>
+                                                <div class="mainnews">
+                                                    <span>时间：2017-05-09 </span>
+                                                </div>
+                                                <p class="mainnews2">他们大部分来自东北，在去年10月份时，其所在城市的劳务中介公司找到他们，介绍了塞班岛的工作，中介给他们开出每天工作8小时日薪300元、如果加班每小时50元的待遇。民工称他们当时也没</p>
+                                                <div class="mainnews3">
+                                                    <span>作者：中岚签证  <span class="hidden-xs">clantrip.com</span></span>
+                                                    <a href="#" class="xiangxi">详细</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+
+                                <div class="col-sm-6 teeger">
+                                        <div class="media ournews">
+                                            <div class="media-left newsimg">
+                                                <a href="#">
+                                                <img class="media-object" src="img/02.png" alt="1">
+                                                </a>
+                                            </div>
+                                            <div class="media-body titlelink">
+                                                <a href="#">
+                                                    <h4> 2017年赴美签证新规定</h4>
+                                                </a>
+                                                <div class="mainnews">
+                                                    <span>时间：2017-05-08 </span>
+                                                </div>
+                                                <p class="mainnews2">美国国务院领事事务局2016年10月6日公告，自2016年11月1日开始，申请美国护照或签证，要使用没有戴眼镜的</p>
+                                                <div class="mainnews3">
+                                                    <span>作者：中岚签证  <span class="hidden-xs">clantrip.com</span></span>
+                                                    <a href="#" class="xiangxi">详细</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-sm-6 teeger2">
+                                        <div class="media ournews">
+                                            <div class="media-left newsimg">
+                                                <a href="#">
+                                                <img class="media-object" src="img/03.jpg" alt="1">
+                                                </a>
+                                            </div>
+                                            <div class="media-body titlelink">
+                                                <a href="#">
+                                                    <h4>美国有多少人缴纳个人所得税及其它</h4>
+                                                </a>
+                                                <div class="mainnews">
+                                                    <span>时间：2017-05-08 </span>
+                                                </div>
+                                                <p class="mainnews2">前几天我们有一篇博文介绍了美国个人所得税税率，不少网友提出许多有关美国个税税收的问题，这里就集中回</p>
+                                                <div class="mainnews3">
+                                                    <span>作者：中岚签证  <span class="hidden-xs">clantrip.com</span></span>
+                                                    <a href="#" class="xiangxi">详细</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div class="col-sm-6 teeger2">
+                                        <div class="media ournews">
+                                            <div class="media-left newsimg">
+                                                <a href="#">
+                                                <img class="media-object" src="img/04.jpg" alt="1">
+                                                </a>
+                                            </div>
+                                            <div class="media-body titlelink">
+                                                <a href="#">
+                                                    <h4>多国签证利好频出，带火春节出境游</h4>
+                                                </a>
+                                                <div class="mainnews">
+                                                    <span>时间：2017-05-08 </span>
+                                                </div>
+                                                <p class="mainnews2">近一两个月来，澳大利亚、马来西亚、以色列、阿联酋、塞尔维亚、泰国等国纷纷对中国公民捧出签证利好，加上</p>
+                                                <div class="mainnews3">
+                                                    <span>作者：中岚签证  <span class="hidden-xs">clantrip.com</span></span>
+                                                    <a href="#" class="xiangxi">详细</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <h2 class="text-center morenews"><a>更多资讯>>></a></h2>
+                    </div>
+
+                    <div class="container-fluid col-sm-12 ourclient">
+                        <div class="container ourclient2">
+                                <h1 class="text-center">我们的客户</h1>
+                                <p class="cenline"></p>
+                                <h2 class="text-center"><small>他们与中岚建立了合作关系</small></h2>
+
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client1.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client2.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client3.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client4.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client5.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client6.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client7.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client8.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client9.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client10.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client11.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                                    <div class="clientlogo">
+                                        <img class="" src="img/client12.png" alt="中国重汽">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="morequest col-md-12">
+                        <div class="container morequest2 text-center">
+                                <h1 class="text-center">更多疑问 全面解答</h1>
+                                <p class="cenline"></p>
+                                <h2 class="text-center"><small>资深美签专家在线为您解答所有疑惑</small></h2>
+                                <a href="#" class="btn">免费资讯</a>
+                        </div>
+                    </div>
+
+                    <div class="footer col-md-12">
+                        <div class="container itemfooter">
+                            <div class="col-xs-6 col-sm-2 footing">
+                                <h4>常用工具</h4>
+                                <ul>
+                                    <li><a href="#">电话查询</a></li>
+                                    <li><a href="#">护照追踪</a></li>
+                                    <li><a href="#">资料下载</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-sm-2 footing">
+                                <h4>快捷工具</h4>
+                                <ul>
+                                    <li><a href="#">签证资讯</a></li>
+                                    <li><a href="#">签证指南</a></li>
+                                    <li><a href="#">常见问题</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-sm-2 footing">
+                                <h4>关于我们</h4>
+                                <ul>
+                                    <li><a href="#">关于中岚</a></li>
+                                    <li><a href="#">服务协议</a></li>
+                                    <li><a href="#">服务本站</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 col-sm-2 footing">
+                                <img src="img/wechat.png" alt="">
+                                <p class="text-center wechathao" style="color:white;">微信号:clanus</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 footing2">
+                                <h2>
+                                    <img src="img/pc-footer-phone.png">
+                                    010-64648731
+                                </h2>
+                                <h2>
+                                    <img src="img/pc-footer-qq.png">
+                                    54350970
+                                </h2>
+                                <h2>
+                                    <img src="img/pc-footer-mob.png">
+                                    18810888729
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copyright col-md-12">
+                        <div class="container copyright2">
+                            <div class="col-sm-12 copyright3">
+                                <p class="text-center" style="color: white;">Copyright © 2006-2019 clantrip.com All Rights Reversed. 中岚签证 
+                                    <a href="#" >京ICP备16015317号</a>
+                                </p>
+                                
+                                <div class="textghs">
+                                    <a href="#">
+                                        <img src="img/ghs.png">
+                                        <p>京公网安备 11010102002687号</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="silderIcon">
+                        <ul>
+                            <li class="hidden-xs silderman" style="display: block;"></li>
+                            <li class="hidden-xs sildertips">在线咨询</li>
+
+                            <li class="hidden-xs silderQQ" style="display: block;"></li>
+                            <li class="hidden-xs sildertips2">QQ咨询</li>
+
+                            <li class="hidden-xs silderphone" style="display: block;"></li>
+                            <li class="hidden-xs sildertips3">010-64648731</li>
+
+                            <li class="hidden-xs silderchat" style="display: block;"></li>
+                            <li class="hidden-xs sildertips4"></li>
+
+                            <li class="hidden-xs backtop"></li>
+                        </ul>
+                    </div>
+
+                    <div class="visible-xs-block mobboottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 mobitem">
+                                    <a href=""><img src="img/mob-footer-phone.png" alt="1"><span>电话咨询</span></a>
+                                </div>
+                                <div class="col-xs-3 mobitem">
+                                    <a href=""><img src="img/mob-footer-mob.png" alt="2"><span>紧急电话</span></a>
+                                </div>
+                                <div class="col-xs-3 mobitem">
+                                    <a href=""><img src="img/mob-footer-chat.png" alt="3"><span>在线咨询</span></a>
+                                </div>
+                                <div class="col-xs-3 mobitem">
+                                    <a href=""><img src="img/mob-footer-msm.png" alt="4"><span>短信咨询</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+        <!-- jQuery -->
+        <script src="js/jquery-3.4.1.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="js/bootstrap.js"></script>
+        <!--ourjs-->
+        <script src="js/index.js"></script>
+    </body>
+</html>
